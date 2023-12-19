@@ -1,0 +1,189 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Helvetica, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+        max-width: 600px;
+        margin: auto;
+}
+
+header {
+        width: 100%;
+        border-bottom: 1px solid #e6e6e6;
+}
+
+header nav {
+        width: 90%;
+        justify-content: space-between;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        height: 90px;
+}
+
+header nav img {
+        color: red;
+        width: 50%;
+        position: relative;
+}
+
+header nav a {
+        width: fit-content;
+        height: fit-content;
+}
+
+nav .sign-in {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 600;
+}
+
+nav .sign-in:hover {
+        text-decoration: underline;
+}
+
+.hero {
+        width: 100%;
+        height: fit-content;
+}
+
+.writting {
+        width: 100%;
+        height: 44%;
+        padding: 3% 0 0 6%
+}
+
+.writting * {
+        margin: 8px 0;
+}
+
+.writting p {
+        font-weight: 500;
+        font-size: 13px;
+}
+
+.writting h1 {
+        font-size: 2rem;
+}
+
+.writting ul {
+        padding: 0 0 0 30px;
+        width: 50%;
+        height: 65%;
+
+}
+
+.writting ul li {
+        list-style: url(assets/images/icons8-done.svg);
+        font-size: 18px;
+}
+
+.plans {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+table {
+        border-collapse: collapse;
+        width: 90%;
+        height: 450px;
+        margin-bottom: 10vh;
+}
+
+td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+}
+
+.headings {
+        position: sticky;
+        top: 0;
+        background-color: white;
+}
+
+tr:last-child td {
+        border: none;
+}
+
+tr td img {
+        height: 30px;
+}
+
+.devices td {
+        vertical-align: baseline;
+}
+
+
+th:first-child {
+        background-color: transparent;
+}
+
+th {
+        left: 0;
+        padding: 0px;
+        font-weight: bold;
+        cursor: pointer;
+}
+
+.plan {
+        width: 110px;
+        height: 90px;
+        background-color: #e50914;
+        opacity: .6;
+        margin: 0 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+}
+
+.plan a {
+        text-decoration: none;
+        color: #e6e6e6;
+}
+
+.plan a:focus .plan {
+        opacity: 1;
+}
+
+.headings .plan:hover {
+        opacity: 1;
+}
+
+.plan:focus {
+        opacity: 1;
+}
+
+.plans span {
+        width: 90%;
+        font-size: .9rem;
+        margin: 0 0 40px 0;
+}
+
+button[type="submit"] {
+        width: 50%;
+        background-color: RED;
+        color: white;
+        height: 11vh;
+        border: none;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin: 10px;
+}
+
+.plans button a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+}

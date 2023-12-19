@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Libre+Franklin:700');
+
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+.navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 90px;
+        padding: 10px;
+        background: #000000;
+        font-family: 'Raleway', sans-serif;
+
+}
+
+.logo {
+        width: 150px;
+}
+
+.logo img {
+        width: 100%;
+}
+
+.search {
+        position: relative;
+        margin: 0 5px;
+}
+
+.search input {
+        width: 200px;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+        padding: 5px 10px;
+        outline: none;
+}
+
+.profile {
+        display: flex;
+        align-items: center;
+}
+
+.profile a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+}
+
+.profile img {
+        width: 30px;
+        height: 30px;
+}
+
+.content {
+        height: fit-content;
+        padding: 20px;
+        background: linear-gradient(to bottom, #272727, #141414);
+}
+
+.category {
+        margin: 20px;
+        padding: 10px;
+}
+
+.category h2 {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: 'Libre Franklin', serif;
+
+}
+
+.movies {
+        display: flex;
+        overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+        height: 10px;
+        width: 10px;
+}
+
+::-webkit-scrollbar-track {
+        background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+        background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+        background: red;
+}
+
+.movie-thumbnail {
+        width: 200px;
+        height: 120px;
+        object-fit: cover;
+        margin-right: 10px;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+@media screen and (max-width:500px) {
+        .search input {
+                width: 100px;
+                height: 30px;
+                border: none;
+                border-radius: 15px;
+                padding: 5px 10px;
+                outline: none;
+        }
+
+        .movie-thumbnail {
+                width: 250px;
+                height: 100px;
+                object-fit: cover;
+                margin-right: 10px;
+                cursor: pointer;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        }
+}

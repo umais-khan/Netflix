@@ -1,0 +1,155 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+        width: 100%;
+        border-bottom: 1px solid #e6e6e6;
+}
+
+header nav {
+        width: 90%;
+        justify-content: space-between;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        height: 90px;
+}
+
+header nav img {
+        color: red;
+        width: 50%;
+        position: relative;
+}
+
+header nav a {
+        width: fit-content;
+        height: fit-content;
+}
+
+header nav a:nth-child(2):hover {
+        text-decoration: underline;
+}
+
+nav .sign-in {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 600;
+}
+
+.hero {
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+}
+
+.main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        max-width: 440px;
+}
+
+.writting {
+        padding: 10px;
+}
+
+.writting h4 {
+        font-weight: 400;
+}
+
+.login_details {
+        width: 450px;
+        height: 37%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #333;
+}
+
+.login_details h1 {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 500;
+}
+
+.login_details>input {
+        height: 60px;
+        width: 94.5%;
+        padding: 0 2%;
+        cursor: pointer;
+        border: 1px solid #8c8c8c;
+        color: #8C8C8C;
+        border-radius: 2px;
+        box-sizing: border-box;
+        color: #000;
+        display: block;
+        font-size: 16px;
+}
+
+.login_details>input:hover {
+        border: 1px solid red;
+
+}
+
+.login_details button[type="submit"] {
+        width: 96%;
+        background-color: RED;
+        color: white;
+        height: 11vh;
+        border: none;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        cursor: pointer;
+}
+
+.login_details button a {
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.login_details span {
+        font-size: 0.8rem;
+        width: 80%;
+}
+
+#special {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        gap: 15px;
+        padding-left: 15px;
+        align-items: center;
+}
+
+#special input {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 1px solid transparent !important;
+        accent-color: green;
+}
+
+#special label {
+        font-weight: 400;
+        font-size: 1.2rem;
+}
+
+#special input:checked,
+#special input:hover,
+#special input:focus {
+        accent-color: green;
+}
